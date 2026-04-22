@@ -13,7 +13,7 @@ Education
 2023-2026 (present)
 :   Westchester Academy for International studies
 
-    Currently Pushing my Academics Towards Computer Science. I am in the first class Quartile. I have a 6.57 GPA. I have * perfect scores in all my computer science classes.
+    Currently Pushing my Academics Towards Computer Science. I am in the first class Quartile. I have a 6.57 GPA. I have perfect scores in all my computer science classes.
 
 2024-2025
 :   PCEP (Beginner Python Certification)
