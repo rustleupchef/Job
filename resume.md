@@ -72,6 +72,7 @@ Technical Experience
       <li>Java 21</li>
       <li>Frontend Development (HTML/JS/CSS)</li>
       <li>Backend Development (Springboot Maven Java)</li>
+      <li>PostGres Database Infastructure</li>
     </ul>
   </div>
 </dd>
@@ -89,11 +90,50 @@ Technical Experience
   </div>
 </dd>
 
+<dt>Portfolio</dt>
+<dd>
+  <div style="word-wrap: break-word; white-space: normal;">
+    CRUD website using Springboot Maven Java to power the backend and AWS DynamoDB to dynamically update projecs as well as allowing users to create accounts and send requests to me (<a href="https://github.com/rustleupchef/portfolio">link</a>) (<a href="https://raspberrypi.tailbba147.ts.net/portfolio">Website</a>)
+    <ul>
+      <li>Git Management</li>
+      <li>Spring-Boot</li>
+      <li>Java 21</li>
+      <li>Frontend Development (HTML/JS/CSS)</li>
+      <li>Backend Development (Springboot Maven Java)</li>
+      <li>AWS DynamoDB</li>
+    </ul>
+  </div>
+</dd>
+
+<dt>WAIS CSHS Website</dt>
+<dd>
+  <div style="word-wrap: break-word; white-space: normal;">Developed a website utilizing Cloudflare workers and google API to enable Member Officers to dynamically update data.
+    (<a href="https://github.com/rustleupchef/waiscshs.github.io">link</a>)
+    <ul>
+      <li>Frontend Development (HTML/JS/CSS)</li>
+      <li>Google API - Google Sheets API</li>
+      <li>Cloudlfare Workers</li>
+    </ul>
+  </div>
+</dd>
+
 </dl>
 
-Misc
+Skills
 ----------------------------------------
 
-* Languages:
+* Programming Languages:
 
-     * English (native speaker)
+     * C# - Extensive Knowledge
+     * Java - Extensive Knowledge
+     * Python - Extensive Knowledge
+     * NodeJS - Intermediate Knowledge
+     * HTML/CSS/JS - Intermediate Knowledge
+
+* Softwares/Frameworks:
+     * AWS DynamoDB
+     * PostGres
+     * SpringBoot
+     * Docker
+     * Git + Github
+     * Ollama
