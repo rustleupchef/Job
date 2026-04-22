@@ -25,21 +25,15 @@ Education
 <dd>
   <strong>Westchester Academy for International studies</strong>
   <div style="word-wrap: break-word; white-space: normal;">
-    Currently Pushing my Academics Towards Computer Science. I am in the first class Quartile. I have a 6.57 GPA. I have * perfect scores in all my computer science classes.
+    Westchester Academy for International Studies is an IB school. Currently Attending, I have a 6.57 GPA and I have perfect grades for every computer science and computer science adjacent course taken.
   </div>
 </dd>
 
 <dt>2024-2025</dt>
 <dd>
-  <strong>PCEP (Beginner Python Certification)</strong>
+  <strong>PCEP (Certified Entry-Level Python Programmer)</strong>
   <div style="word-wrap: break-word; white-space: normal;">
-    A certification for an entry level understanding of python. Testing on:
-    <ol>
-      <li>Python and Programming Fundamentals</li>
-      <li>Control Flow - Conditional Blocks and Loops</li>
-      <li>Data Collections - Lists, Tuples, Dictionaries, and Strings</li>
-      <li>Functions and Exceptions</li>
-    </ol>
+    The PCEP™ certification shows that the individual is familiar with the following concepts: fundamental terms and definitions (e.g. compilation vs. interpretation), Python's logic and structure (e.g. keywords, instructions, indentation), literals, variables, and numeral systems, operators and data types, I/O operations, control flow mechanisms (conditional blocks and loops), data collections (lists, tuples, dictionaries, strings), functions (decomposition, built-in and user-defined functions, organizing interaction between functions and their environment, generators, recursion), exceptions (exception handling, hierarchies), as well as the essentials of Python programming language syntax, semantics, and the runtime environment. 
   </div>
 </dd>
 
