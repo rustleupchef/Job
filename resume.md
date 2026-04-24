@@ -130,18 +130,35 @@ Technical Experience
 Skills
 ----------------------------------------
 
-* Programming Languages:
+<table style="width:100%; border-collapse: collapse;">
+	<tr>
+    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+    	<span style="font-weight: bold;">Programming Languages</span>
+    </td>
+    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+      <ul>
+        <li>C# - Extensive Knowledge</li>
+        <li>Java - Extensive Knowledge</li>
+        <li>Python - Extensive Knowledge</li>
+        <li>NodeJS - Intemediate Knowledge</li>
+        <li>HTML/CSS/JS - Intermediate Knowledge</li>
+      </ul>
+    </td>
+  </tr>
 
-     * C# - Extensive Knowledge
-     * Java - Extensive Knowledge
-     * Python - Extensive Knowledge
-     * NodeJS - Intermediate Knowledge
-     * HTML/CSS/JS - Intermediate Knowledge
-
-* Softwares/Frameworks:
-     * AWS DynamoDB
-     * PostGres
-     * SpringBoot
-     * Docker
-     * Git + Github
-     * Ollama
+  <tr>
+    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+      <span style="font-weight: bold;">Software/Frameworks</span>
+    </td>
+    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+      <ul>
+        <li>AWS DyanmoDB</li>
+		<li>PostGres</li>
+        <li>Java Spring-Boot</li>
+        <li>Docker</li>
+        <li>Git + Github</li>
+        <li>Ollama</li>
+      </ul>
+    </td>
+  </tr>
+</table>
