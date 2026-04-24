@@ -134,31 +134,24 @@ Skills
 	<tr>
     <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
     	<span style="font-weight: bold;">Programming Languages</span>
+		<ul>
+			<li>C# - Extensive Knowledge</li>
+			<li>Java - Extensive Knowledge</li>
+			<li>Python - Extensive Knowledge</li>
+			<li>NodeJS - Intemediate Knowledge</li>
+			<li>HTML/CSS/JS - Intermediate Knowledge</li>
+		</ul>
     </td>
     <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
-      <ul>
-        <li>C# - Extensive Knowledge</li>
-        <li>Java - Extensive Knowledge</li>
-        <li>Python - Extensive Knowledge</li>
-        <li>NodeJS - Intemediate Knowledge</li>
-        <li>HTML/CSS/JS - Intermediate Knowledge</li>
-      </ul>
-    </td>
-  </tr>
-
-  <tr>
-    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
-      <span style="font-weight: bold;">Software/Frameworks</span>
-    </td>
-    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
-      <ul>
-        <li>AWS DyanmoDB</li>
-		<li>PostGres</li>
-        <li>Java Spring-Boot</li>
-        <li>Docker</li>
-        <li>Git + Github</li>
-        <li>Ollama</li>
-      </ul>
+    	<span style="font-weight: bold;">Software/Skills</span>
+		<ul>
+			<li>AWS DyanmoDB</li>
+			<li>PostGres</li>
+			<li>Java Spring-Boot</li>
+			<li>Docker</li>
+			<li>Git + Github</li>
+			<li>Ollama</li>
+		</ul>
     </td>
   </tr>
 </table>
