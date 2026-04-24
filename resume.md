@@ -58,65 +58,73 @@ Education
 Technical Experience
 --------------------
 
-<dl>
+<table style="width:100%; border-collapse: collapse;">
 
-<dt>Forge (Online Integrated Development Environment)</dt>
-<dd>
-  <div style="word-wrap: break-word; white-space: normal;">
-    I developed an online integrated development environment packaged with one on one learning opportunities targeted towards the youth. (<a href="https://github.com/rustleupchef/forge">link</a>)
-    <ul>
-      <li>Docker Containers</li>
-      <li>Git Management</li>
-      <li>Spring-Boot</li>
-      <li>Java 21</li>
-      <li>Frontend Development (HTML/JS/CSS)</li>
-      <li>Backend Development (Springboot Maven Java)</li>
-      <li>PostGres Database Infastructure</li>
-    </ul>
-  </div>
-</dd>
+  <tr>
+    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+    	<span style="font-weight: bold;">Forge (Online Integrated Development Environment)</span><br>
+		I developed an online integrated development environment packaged with one on one learning opportunities targeted towards the youth. (<a href="https://github.com/rustleupchef/forge">link</a>)
+    </td>
+    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+      <ul>
+        <li>Docker Containers</li>
+        <li>Git Management</li>
+        <li>Spring-Boot</li>
+        <li>Java 21</li>
+        <li>Frontend Development (HTML/JS/CSS)</li>
+        <li>Backend Development (Springboot Maven Java)</li>
+        <li>PostGres Database Infastructure</li>
+      </ul>
+    </td>
+  </tr>
 
-<dt>IB Personal Project - Non Intrusive Brainwave Interpreter w/ EEGs</dt>
-<dd>
-  <div style="word-wrap: break-word; white-space: normal;">
-    Paralysis Aid that uses machine learning (Echo State Networks and Multi-Layer Perceptrons) to map electroencephalogram data to specific works packaged with facial reading software, formatted to let users create their own models. The software is under a GPL license. (<a href="https://github.com/rustleupchef/paralysis-aid">link</a>)
-    <ul>
-      <li>Echo State Neural Networks</li>
-      <li>Sequence Prediction Models</li>
-      <li>Frontend Development (HTML/CSS/JS)</li>
-      <li>Rudimentary Backend Development (NodeJS)</li>
-    </ul>
-  </div>
-</dd>
+  <tr>
+    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+    	<span style="font-weight: bold;">IB Personal Project - Non Intrusive Brainwave Interpreter w/ EEGs</span><br>
+		Paralysis Aid that uses machine learning (Echo State Networks and Multi-Layer Perceptrons) to map electroencephalogram data to specific works packaged with facial reading software, formatted to let users create their own models. The software is under a GPL license. (<a href="https://github.com/rustleupchef/paralysis-aid">link</a>)
+    </td>
+    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+      <ul>
+        <li>Echo State Neural Networks</li>
+        <li>Sequence Prediction Models</li>
+        <li>Frontend Development (HTML/CSS/JS)</li>
+        <li>Rudimentary Backend Development (NodeJS)</li>
+      </ul>
+    </td>
+  </tr>
 
-<dt>Portfolio</dt>
-<dd>
-  <div style="word-wrap: break-word; white-space: normal;">
-    CRUD website using Springboot Maven Java to power the backend and AWS DynamoDB to dynamically update projecs as well as allowing users to create accounts and send requests to me (<a href="https://github.com/rustleupchef/portfolio">link</a>) (<a href="https://raspberrypi.tailbba147.ts.net/portfolio">Website</a>)
-    <ul>
-      <li>Git Management</li>
-      <li>Spring-Boot</li>
-      <li>Java 21</li>
-      <li>Frontend Development (HTML/JS/CSS)</li>
-      <li>Backend Development (Springboot Maven Java)</li>
-      <li>AWS DynamoDB</li>
-    </ul>
-  </div>
-</dd>
+  <tr>
+    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+    	<span style="font-weight: bold;">Portfolio</span><br>
+		CRUD website using Springboot Maven Java to power the backend and AWS DynamoDB to dynamically update projecs as well as allowing users to create accounts and send requests to me (<a href="https://github.com/rustleupchef/portfolio">link</a>) (<a href="https://raspberrypi.tailbba147.ts.net/portfolio">Website</a>)
+    </td>
+    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+      <ul>
+        <li>Git Management</li>
+        <li>Spring-Boot</li>
+        <li>Java 21</li>
+        <li>Frontend Development (HTML/JS/CSS)</li>
+        <li>Backend Development (Springboot Maven Java)</li>
+        <li>AWS DynamoDB</li>
+      </ul>
+    </td>
+  </tr>
 
-<dt>WAIS CSHS Website</dt>
-<dd>
-  <div style="word-wrap: break-word; white-space: normal;">Developed a website utilizing Cloudflare workers and google API to enable Member Officers to dynamically update data.
-    (<a href="https://github.com/rustleupchef/waiscshs.github.io">link</a>)
-    <ul>
-      <li>Frontend Development (HTML/JS/CSS)</li>
-      <li>Google API - Google Sheets API</li>
-      <li>Cloudlfare Workers</li>
-    </ul>
-  </div>
-</dd>
+  <tr>
+    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+      <span style="font-weight: bold;">WAIS CSHS Website</span><br>
+      Developed a website utilizing Cloudflare workers and google API to enable Member Officers to dynamically update data. (<a href="https://github.com/rustleupchef/waiscshs.github.io">link</a>)
+    </td>
+    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+      <ul>
+        <li>Frontend Development (HTML/JS/CSS)</li>
+        <li>Google API - Google Sheets API</li>
+        <li>Cloudlfare Workers</li>
+      </ul>
+    </td>
+  </tr>
 
-</dl>
+</table>
 
 Skills
 ----------------------------------------
