@@ -61,11 +61,11 @@ Technical Experience
 <table style="width:100%; border-collapse: collapse;">
 
   <tr>
-    <td style="width: 50%; vertical-align: top; word-wrap: break-word; white-space: normal;">
+    <td style="width: 40%; vertical-align: top; word-wrap: break-word; white-space: normal;">
     	<span style="font-weight: bold;">Forge (Online Integrated Development Environment)</span><br>
 		I developed an online integrated development environment packaged with one on one learning opportunities targeted towards the youth. (<a href="https://github.com/rustleupchef/forge">link</a>)
     </td>
-    <td style="width: 50%; vertical-align: top; word-wrap: break-word; white-space: normal;">
+    <td style="width: 60%; vertical-align: top; word-wrap: break-word; white-space: normal;">
       <ul>
         <li>Docker Containers</li>
         <li>Git Management</li>
@@ -79,11 +79,11 @@ Technical Experience
   </tr>
 
   <tr>
-    <td style="width: 50%; vertical-align: top; word-wrap: break-word; white-space: normal;">
+    <td style="width: 40%; vertical-align: top; word-wrap: break-word; white-space: normal;">
     	<span style="font-weight: bold;">IB Personal Project - Non Intrusive Brainwave Interpreter w/ EEGs</span><br>
 		Paralysis Aid that uses machine learning (Echo State Networks and Multi-Layer Perceptrons) to map electroencephalogram data to specific works packaged with facial reading software, formatted to let users create their own models. The software is under a GPL license. (<a href="https://github.com/rustleupchef/paralysis-aid">link</a>)
     </td>
-    <td style="width: 50%; vertical-align: top; word-wrap: break-word; white-space: normal;">
+    <td style="width: 60%; vertical-align: top; word-wrap: break-word; white-space: normal;">
       <ul>
         <li>Echo State Neural Networks</li>
         <li>Sequence Prediction Models</li>
@@ -94,11 +94,11 @@ Technical Experience
   </tr>
 
   <tr>
-    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+    <td style="width: 40%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
     	<span style="font-weight: bold;">Portfolio</span><br>
 		CRUD website using Springboot Maven Java to power the backend and AWS DynamoDB to dynamically update projecs as well as allowing users to create accounts and send requests to me (<a href="https://github.com/rustleupchef/portfolio">link</a>) (<a href="https://raspberrypi.tailbba147.ts.net/portfolio">Website</a>)
     </td>
-    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+    <td style="width: 60%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
       <ul>
         <li>Git Management</li>
         <li>Spring-Boot</li>
@@ -111,11 +111,11 @@ Technical Experience
   </tr>
 
   <tr>
-    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+    <td style="width: 40%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
       <span style="font-weight: bold;">WAIS CSHS Website</span><br>
       Developed a website utilizing Cloudflare workers and google API to enable Member Officers to dynamically update data. (<a href="https://github.com/rustleupchef/waiscshs.github.io">link</a>)
     </td>
-    <td style="width: 50%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
+    <td style="width: 60%; vertical-align: top; padding: 8px; word-wrap: break-word; white-space: normal;">
       <ul>
         <li>Frontend Development (HTML/JS/CSS)</li>
         <li>Google API - Google Sheets API</li>
