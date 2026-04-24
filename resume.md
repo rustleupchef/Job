@@ -63,7 +63,8 @@ Technical Experience
   <tr>
     <td style="width: 40%; vertical-align: top; word-wrap: break-word; white-space: normal;">
     	<span style="font-weight: bold;">Forge (Online Integrated Development Environment)</span><br>
-		I developed an online integrated development environment packaged with one on one learning opportunities targeted towards the youth. (<a href="https://github.com/rustleupchef/forge">link</a>)
+		Designed and developed a full-stack online integrated development environment that enables users to create, manage, and execute coding projects directly in the browser. Built a robust backend using Java Spring-Boot. Leveraged Docker containers to spin up isolated, sandboxed runtime environments per user session, ensuring security and scalability. Persisted user data, project files, and progress using PostgreSQL. Integrated a learning section allowing users to contact the creator for teaching.
+(<a href="https://github.com/rustleupchef/forge">link</a>)
     </td>
     <td style="width: 60%; vertical-align: top; word-wrap: break-word; white-space: normal;">
       <ul>
