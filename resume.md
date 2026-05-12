@@ -29,6 +29,13 @@ Education
   </div>
 </dd>
 
+</dl>
+
+Certifications
+--------------
+
+<dl>
+
 <dt>2024-2025</dt>
 <dd>
   <strong>PCEP (Certified Entry-Level Python Programmer)</strong>
