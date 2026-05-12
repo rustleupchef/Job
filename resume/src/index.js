@@ -43,6 +43,21 @@ const html = (content) => `<!DOCTYPE html>
 </head>
 <body>
   <div id="content">${content}</div>
+
+  <script>
+    window.addEventListener('beforeprint', () => {
+      const el = document.getElementById('content');
+      el.style.transform = 'none'; // reset
+      const pageHeightPx = 297 / 25.4 * 96; // A4 at 96dpi
+      const contentHeight = el.scrollHeight;
+      if (contentHeight > pageHeightPx) {
+        const scale = pageHeightPx / contentHeight;
+        el.style.transform = 'scale(' + scale + ')';
+        el.style.transformOrigin = 'top left';
+        el.style.width = (100 / scale) + '%';
+      }
+    });
+  </script>
 </body>
 </html>`;
 
