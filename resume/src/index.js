@@ -84,10 +84,6 @@ export default {
 					"Content-Type": "text/markdown",
 				},
 			});
-		} else if (request.method === "GET" && new URL(request.url).pathname === "/resume.pdf") {
-			const response = await fetch("https://raw.githubusercontent.com/rustleupchef/Job/master/resume.md");
-			const md = await response.text();
-			
 		} else {
 			return new Response("Not Found", { status: 404 });
 		}
