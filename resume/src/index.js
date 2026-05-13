@@ -51,7 +51,7 @@ const html = (content) => `<!DOCTYPE html>
       const pageHeightPx = 297 / 25.4 * 96; // A4 at 96dpi
       const contentHeight = el.scrollHeight;
       if (contentHeight > pageHeightPx) {
-        const scale = pageHeightPx / contentHeight;
+        const scale = pageHeightPx / contentHeight * 1.25;
         el.style.transform = 'scale(' + scale + ')';
         el.style.transformOrigin = 'top left';
         el.style.width = (100 / scale) + '%';
