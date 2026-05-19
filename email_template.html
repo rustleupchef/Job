@@ -260,19 +260,19 @@
 
     <!-- Greeting -->
     <p class="greeting">
-      Dear <em><span class="placeholder">{{ Recipient First Name }}</span></em>,
+      Dear <em><span>%s</span></em>,
     </p>
 
     <!-- Opening hook: why YOU, why NOW -->
     <div class="body-copy">
       <p>
         I came across your
-        <span class="placeholder">{{ recent paper / talk / project / LinkedIn post }}</span>
-        on <span class="placeholder">{{ specific topic }}</span>, and it directly
+        <span>%s</span>
+        on <span>%s</span>, and it directly
         connects to research I'm pursuing on
         <span>Decoding EEG Data</span>.
         I was particularly struck by
-        <span class="placeholder">{{ one concrete detail that shows you actually read it }}</span>.
+        <span>%s</span>.
       </p>
 
       <!-- Credibility paragraph -->
@@ -293,11 +293,7 @@
     <div class="highlight-block">
       <p>
         <strong>Why I'm reaching out:</strong><br />
-        <span class="placeholder">
-          {{ Explain the specific overlap between your work and theirs —
-             e.g. "Your methodology for X maps closely onto the gap I've
-             identified in Y, and I'd love to understand how you approached Z." }}
-        </span>
+        <span>%s</span>
       </p>
     </div>
 
