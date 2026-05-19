@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cold Email Template – Research Outreach</title>
+  <!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  COLD EMAIL TEMPLATE — RESEARCH OUTREACH                    ║
+  ║  Fill in all {{ PLACEHOLDER }} fields before sending.       ║
+  ╚══════════════════════════════════════════════════════════════╝
+
+  SUBJECT LINE IDEAS (pick one & personalise):
+    • Quick question about your work on [TOPIC]
+    • Admired your [PAPER/PROJECT] — a short ask
+    • [MUTUAL CONNECTION] suggested I reach out
+    • Research interest: [SPECIFIC AREA]
+  -->
+  <style>
+    /* ── Reset ── */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #f0ede8;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      color: #1a1a1a;
+      padding: 40px 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Outer wrapper ── */
+    .wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ── Header stripe ── */
+    .header {
+      background: #1a1a1a;
+      padding: 28px 40px;
+      border-radius: 4px 4px 0 0;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .header-monogram {
+      width: 44px;
+      height: 44px;
+      border: 2px solid #c8a96e;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Georgia', serif;
+      font-size: 18px;
+      color: #c8a96e;
+      flex-shrink: 0;
+      letter-spacing: 0.5px;
+    }
+
+    .header-text {
+      color: #f0ede8;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: 0.7;
+    }
+
+    /* ── Card body ── */
+    .card {
+      background: #ffffff;
+      padding: 48px 48px 40px;
+      border-left: 1px solid #e8e3db;
+      border-right: 1px solid #e8e3db;
+    }
+
+    /* ── Greeting ── */
+    .greeting {
+      font-size: 22px;
+      font-weight: normal;
+      color: #1a1a1a;
+      margin-bottom: 28px;
+      line-height: 1.3;
+    }
+
+    .greeting em {
+      font-style: normal;
+      color: #c8a96e;
+      border-bottom: 1px solid #c8a96e;
+      padding-bottom: 1px;
+    }
+
+    /* ── Body copy ── */
+    .body-copy p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #3a3a3a;
+      margin-bottom: 20px;
+    }
+
+    /* ── Highlight block ── */
+    .highlight-block {
+      border-left: 3px solid #c8a96e;
+      background: #faf8f4;
+      padding: 16px 20px;
+      margin: 28px 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlight-block p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #555;
+      margin: 0;
+    }
+
+    .highlight-block strong {
+      color: #1a1a1a;
+      font-weight: bold;
+    }
+
+    /* ── Ask section ── */
+    .ask-label {
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #c8a96e;
+      font-family: 'Georgia', serif;
+      margin-bottom: 8px;
+    }
+
+    .ask-text {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #3a3a3a;
+      margin-bottom: 28px;
+    }
+
+    /* ── CTA button ── */
+    .cta-wrap {
+      text-align: center;
+      margin: 36px 0 32px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: #1a1a1a;
+      color: #f0ede8 !important;
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      padding: 14px 36px;
+      border-radius: 2px;
+      font-family: 'Georgia', serif;
+      transition: background 0.2s;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      border: none;
+      border-top: 1px solid #e8e3db;
+      margin: 32px 0;
+    }
+
+    /* ── Signature ── */
+    .signature {
+      font-size: 15px;
+      color: #3a3a3a;
+      line-height: 1.7;
+    }
+
+    .signature .name {
+      font-size: 17px;
+      font-weight: bold;
+      color: #1a1a1a;
+      margin-bottom: 4px;
+    }
+
+    .signature .title-line {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 2px;
+    }
+
+    .signature a {
+      color: #c8a96e;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #1a1a1a;
+      padding: 20px 40px;
+      border-radius: 0 0 4px 4px;
+      text-align: center;
+    }
+
+    .footer p {
+      font-size: 11px;
+      color: #888;
+      letter-spacing: 1px;
+      line-height: 1.6;
+    }
+
+    /* ── Edit hints (visible in browser, not in email clients) ── */
+    .placeholder {
+      background: #fff3cd;
+      color: #856404;
+      border-radius: 3px;
+      padding: 1px 5px;
+      font-size: inherit;
+      font-style: italic;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 520px) {
+      .card { padding: 32px 24px; }
+      .header { padding: 20px 24px; }
+      .footer { padding: 16px 24px; }
+      .greeting { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrapper">
+
+  <!-- ░░ HEADER ░░ -->
+  <div class="header">
+    <div class="header-monogram">
+      <!-- Replace with your initials -->
+      <span style="background:transparent;color:#c8a96e;font-style:normal;">SS</span>
+    </div>
+    <div class="header-text">Research Outreach</div>
+  </div>
+
+  <!-- ░░ CARD BODY ░░ -->
+  <div class="card">
+
+    <!-- Greeting -->
+    <p class="greeting">
+      Dear <em><span class="placeholder">{{ Recipient First Name }}</span></em>,
+    </p>
+
+    <!-- Opening hook: why YOU, why NOW -->
+    <div class="body-copy">
+      <p>
+        I came across your
+        <span class="placeholder">{{ recent paper / talk / project / LinkedIn post }}</span>
+        on <span class="placeholder">{{ specific topic }}</span>, and it directly
+        connects to research I'm pursuing on
+        <span>Decoding EEG Data</span>.
+        I was particularly struck by
+        <span class="placeholder">{{ one concrete detail that shows you actually read it }}</span>.
+      </p>
+
+      <!-- Credibility paragraph -->
+      <p>
+        I'm <span>Siddhant Shetty</span>, a
+        <span>high-school student</span>
+        at <span>Westchester Acemy for International Studies</span>
+        currently working on <span>a research paper on decoding EEG brainwaves using vectorization with a commerical EEG</span>.
+        My background includes
+        <span class="placeholder">{{ 1–2 relevant credentials or projects }}</span>.
+      </p>
+    </div>
+
+    <!-- Common ground block -->
+    <div class="highlight-block">
+      <p>
+        <strong>Why I'm reaching out:</strong><br />
+        <span class="placeholder">
+          {{ Explain the specific overlap between your work and theirs —
+             e.g. "Your methodology for X maps closely onto the gap I've
+             identified in Y, and I'd love to understand how you approached Z." }}
+        </span>
+      </p>
+    </div>
+
+    <!-- The ask -->
+    <p class="ask-label">My ask</p>
+    <p class="ask-text">
+      Would you be open to a
+      <span>a short call or a email exchange</span>
+      sometime in the next few weeks? I'd love to
+      <span> I'd love to discuss a possible collaboration or shadowing
+      </span>.
+      I'm happy to work around your schedule.
+    </p>
+
+    <!-- Optional CTA button (e.g. Calendly link) -->
+    <div class="cta-wrap">
+      <a href="{{ CALENDLY_OR_MEETING_LINK }}" class="cta-btn">
+        Schedule a Chat
+      </a>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- Signature -->
+    <div class="signature">
+      <p>Warm regards,</p>
+      <br />
+      <p class="name"><span>Siddhant Shetty</span></p>
+      <p>
+        <a href="mailto:rustle.up.chef@gmail.com"><span>rustle.up.chef@gmail.com</span></a>
+        &nbsp;·&nbsp;
+        <a href="https://raspberrypi.tailbba147.ts.net/portfolio">Portfolio</a>
+      </p>
+    </div>
+
+  </div><!-- /card -->
+
+  <!-- ░░ FOOTER ░░ -->
+  <div class="footer">
+    <p>
+      You're receiving this because
+      <span style="color:#aaa;">{{ how you found them / mutual connection / public profile }}</span>.<br />
+      Reply directly to unsubscribe from future outreach.
+    </p>
+  </div>
+
+</div><!-- /wrapper -->
+
+</body>
+</html>
