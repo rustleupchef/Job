@@ -17,7 +17,7 @@
     • Research interest: [SPECIFIC AREA]
   -->
   <style>
-    /* ── Reset ── */
+* ── Reset ── */
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
@@ -37,11 +37,18 @@
     /* ── Header stripe ── */
     .header {
       background: #1a1a1a;
-      padding: 28px 40px;
       border-radius: 4px 4px 0 0;
-      display: flex;
-      align-items: center;
-      gap: 16px;
+    }
+
+    .header-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .header-monogram-cell {
+      width: 60px;
+      padding: 28px 0 28px 40px;
+      vertical-align: middle;
     }
 
     .header-monogram {
@@ -49,14 +56,17 @@
       height: 44px;
       border: 2px solid #c8a96e;
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       font-family: 'Georgia', serif;
       font-size: 18px;
       color: #c8a96e;
-      flex-shrink: 0;
       letter-spacing: 0.5px;
+      text-align: center;
+      line-height: 40px;
+    }
+
+    .header-text-cell {
+      padding: 28px 40px 28px 16px;
+      vertical-align: middle;
     }
 
     .header-text {
@@ -230,12 +240,20 @@
 
   <!-- ░░ HEADER ░░ -->
   <div class="header">
-    <div class="header-monogram">
-      <!-- Replace with your initials -->
-      <span style="background:transparent;color:#c8a96e;font-style:normal;">SS</span>
-    </div>
-    <div class="header-text">Research Outreach</div>
-  </div>
+    <table class="header-table">
+      <tr>
+        <td class="header-monogram-cell">
+          <div class="header-monogram">
+            <!-- Replace with your initials -->
+            <span style="background:transparent;color:#c8a96e;font-style:normal;">SS</span>
+          </div>
+        </td>
+        <td class="header-text-cell">
+          <div class="header-text">Research Outreach</div>
+        </td>
+      </tr>
+    </table>
+  </div>  
 
   <!-- ░░ CARD BODY ░░ -->
   <div class="card">
