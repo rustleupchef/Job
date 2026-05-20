@@ -1,4 +1,5 @@
 import { marked } from "marked";
+import util from "util";
 
 const html = (content) => `<!DOCTYPE html>
 <html>
@@ -66,7 +67,7 @@ export default {
 
 		if (request.method === "GET" && new URL(request.url).pathname === "/") {
 		
-			const response = await fetch("https://raw.githubusercontent.com/rustleupchef/Job/master/resume.md");
+			const response = await fetch("https://raw.githubusercontent.com/rustleupchef/Job/master/README.md");
 			const markdown = await response.text();
 
 			const htmlContent = marked(markdown);
@@ -76,7 +77,7 @@ export default {
 				},
 			});
 		}  else if (request.method === "GET" && new URL(request.url).pathname === "/resume.md") {
-			const response = await fetch("https://raw.githubusercontent.com/rustleupchef/Job/master/resume.md");
+			const response = await fetch("https://raw.githubusercontent.com/rustleupchef/Job/master/README.md");
 			const markdown = await response.text();
 
 			return new Response(markdown, {
@@ -84,7 +85,21 @@ export default {
 					"Content-Type": "text/markdown",
 				},
 			});
-		} else {
+		} else if (request.method === "POST" && new URL(request.url).pathname === "/email_template") {
+			const payload = await request.json();
+			
+			const name = payload.name;
+			const paper = payload.paper;
+			const subject = payload.subject;
+			const detail = payload.detail;
+			const why = payload.why;
+
+
+			const response = await fetch("https://raw.githubusercontent.com/rustleupchef/Job/master/email_template.html");
+			const htmlContent = await response.text();
+
+			return new Response(util.format(htmlContent, name, paper, subject, detail, why));
+    	} else {
 			return new Response("Not Found", { status: 404 });
 		}
 	}
