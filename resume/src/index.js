@@ -1,5 +1,8 @@
 import { marked } from "marked";
 import util from "util";
+import fs from "fs";
+
+import generatePage from "./generate.html";
 
 const html = (content) => `<!DOCTYPE html>
 <html>
@@ -99,7 +102,13 @@ export default {
 			const htmlContent = await response.text();
 
 			return new Response(util.format(htmlContent, name, paper, subject, detail, why));
-    	} else {
+    	} else if (request.method === "GET" && new URL(request.url).pathname === "/email_template") {
+			return new Response(generatePage, {
+				headers : {
+					"Content-Type": "text/html"
+				}
+			});
+		} else {
 			return new Response("Not Found", { status: 404 });
 		}
 	}

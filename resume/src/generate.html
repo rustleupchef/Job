@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Generate Email Template</title>
+	<style>
+		body {
+			margin: 0;
+			font-family: system-ui, sans-serif;
+			background: #f7f7f7;
+			color: #1f2937;
+		}
+
+		.page {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 24px;
+		}
+
+		h1,
+		p {
+			margin: 0;
+		}
+
+		.hero {
+			padding: 24px;
+			border-radius: 16px;
+			background: #ffffff;
+			box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+			margin-bottom: 24px;
+		}
+
+		.hero p {
+			margin-top: 12px;
+			line-height: 1.7;
+			color: #4b5563;
+		}
+
+		form {
+			display: grid;
+			gap: 16px;
+			margin-bottom: 24px;
+		}
+
+		label {
+			display: grid;
+			gap: 8px;
+			font-size: 0.95rem;
+			color: #374151;
+		}
+
+		input,
+		textarea,
+		button,
+		select {
+			width: 100%;
+			font: inherit;
+			border-radius: 12px;
+			border: 1px solid #d1d5db;
+			padding: 12px 14px;
+			outline: none;
+			background: #ffffff;
+		}
+
+		textarea {
+			min-height: 120px;
+			resize: vertical;
+		}
+
+		button {
+			cursor: pointer;
+			border: none;
+			background: #111827;
+			color: #ffffff;
+			font-weight: 600;
+			transition: background 0.2s ease;
+		}
+
+		button:hover {
+			background: #1f2937;
+		}
+
+		.result-panel {
+			display: grid;
+			gap: 16px;
+		}
+
+		.status {
+			padding: 14px 16px;
+			border-radius: 12px;
+			background: #f3f4f6;
+			color: #374151;
+		}
+
+		.preview {
+			min-height: 320px;
+			border: 1px solid #d1d5db;
+			border-radius: 16px;
+			overflow: hidden;
+			background: #fff;
+		}
+
+		.preview iframe {
+			width: 100%;
+			height: 560px;
+			border: 0;
+		}
+
+		.controls {
+			display: flex;
+			gap: 12px;
+			flex-wrap: wrap;
+		}
+
+		.secondary {
+			background: #e5e7eb;
+			color: #111827;
+		}
+
+		.note {
+			font-size: 0.95rem;
+			color: #6b7280;
+		}
+
+		@media (max-width: 720px) {
+			.preview iframe {
+				height: 420px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<main class="page">
+		<section class="hero">
+			<h1>Generate a Cold Email Template</h1>
+			<p>Fill in the fields below and hit Generate. The page will submit your data to
+				<code>POST /email_template</code> and display the formatted HTML output instantly.</p>
+		</section>
+
+		<form id="template-form">
+			<label>
+				Recipient name
+				<input type="text" name="name" placeholder="Dr. Chen" required />
+			</label>
+
+			<label>
+				Paper / project / work to mention
+				<input type="text" name="paper" placeholder="your recent paper on molecular computing" required />
+			</label>
+
+			<label>
+				Email subject idea
+				<input type="text" name="subject" placeholder="Quick question about your work" required />
+			</label>
+
+			<label>
+				Why you are writing
+				<textarea name="why" placeholder="I’m reaching out because..." required></textarea>
+			</label>
+
+			<label>
+				Key detail to include
+				<textarea name="detail" placeholder="I’m working on..." required></textarea>
+			</label>
+
+			<div class="controls">
+				<button type="submit">Generate Template</button>
+				<button type="button" id="copy-html" class="secondary">Copy HTML source</button>
+				<button type="button" id="download-html" class="secondary">Download HTML</button>
+			</div>
+		</form>
+
+		<div class="result-panel">
+			<div class="status" id="status">Ready to generate your email template.</div>
+			<div class="preview" id="preview-container">
+				<iframe id="preview-frame" title="Email template preview"></iframe>
+			</div>
+		</div>
+	</main>
+
+	<script>
+		const form = document.getElementById('template-form');
+		const status = document.getElementById('status');
+		const previewFrame = document.getElementById('preview-frame');
+		const copyButton = document.getElementById('copy-html');
+		const downloadButton = document.getElementById("download-html");
+		let lastHtml = '';
+
+		form.addEventListener('submit', async (event) => {
+			event.preventDefault();
+
+			const formData = new FormData(form);
+			const payload = {
+				name: formData.get('name'),
+				paper: formData.get('paper'),
+				subject: formData.get('subject'),
+				detail: formData.get('detail'),
+				why: formData.get('why'),
+			};
+
+			status.textContent = 'Generating template...';
+			previewFrame.srcdoc = '<p style="padding: 24px; color: #6b7280;">Loading preview…</p>';
+
+			try {
+				const response = await fetch('/email_template', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify(payload),
+				});
+
+				if (!response.ok) {
+					const errorText = await response.text();
+					status.textContent = 'Error generating template: ' + response.status + ' ' + errorText;
+					previewFrame.srcdoc = '<p style="padding: 24px; color: #b91c1c;">Unable to load preview.</p>';
+					lastHtml = '';
+					return;
+				}
+
+				const html = await response.text();
+				lastHtml = html;
+				previewFrame.srcdoc = html;
+				status.textContent = 'Template generated successfully. Preview shown below.';
+			} catch (error) {
+				status.textContent = 'Network error: ' + error.message;
+				previewFrame.srcdoc = '<p style="padding: 24px; color: #b91c1c;">Unable to load preview.</p>';
+				lastHtml = '';
+			}
+		});
+
+		copyButton.addEventListener('click', async () => {
+			if (!lastHtml) {
+				status.textContent = 'Generate a template first before copying the HTML.';
+				return;
+			}
+
+			try {
+				await navigator.clipboard.writeText(lastHtml);
+				status.textContent = 'HTML source copied to clipboard.';
+			} catch (error) {
+				status.textContent = 'Copy failed: ' + error.message;
+			}
+		});
+
+		downloadButton.addEventListener('click', () => {
+			if (!lastHtml) {
+				status.textContent = 'Generate a template first before downloading the HTML.';
+				return;
+			}
+
+			try {
+				const blob = new Blob([lastHtml], { type: 'text/html;charset=utf-8' });
+				const url = URL.createObjectURL(blob);
+				const anchor = document.createElement('a');
+				anchor.href = url;
+				anchor.download = 'email_template.html';
+				document.body.appendChild(anchor);
+				anchor.click();
+				document.body.removeChild(anchor);
+				URL.revokeObjectURL(url);
+				status.textContent = 'HTML source downloaded.';
+			} catch (error) {
+				status.textContent = 'Download failed: ' + error.message;
+			}
+		});
+
+	</script>
+</body>
+
+</html>
